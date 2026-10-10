@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "estudies",
+    "slug": "estudies",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#121212"
+      }
+    },
+    "web": {
+      "favicon": "./app/assets/icon.png"
+    }
+  }
+}

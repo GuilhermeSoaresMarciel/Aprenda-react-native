@@ -1,0 +1,25 @@
+export default function stylesDefault() {
+  return {
+    bgMain: "rgb(20, 20, 43)",
+    bgSecond: "rgb(31, 31, 61)",
+    bgOn: "rgb(91, 84, 232)",
+    bgOnSoft: "rgb(45, 43, 110)",
+    accent: "rgb(124, 224, 240)",
+    code: "rgb(255, 214, 102)",
+    border: "rgb(52, 52, 96)",
+    textColor: "rgb(255, 255, 255)",
+    textMuted: "rgb(180, 180, 214)",
+    padding: 10,
+    gap: 10,
+    borderRadius: 10,
+    fontHero: 36,
+    fontTitle: 28,
+    fontSubtitle: 22,
+    fontLead: 18,
+    fontText: 16,
+    fontSmall: 14,
+    fontTiny: 12,
+    lineHeight: 24,
+    iconSize: 44,
+  };
+}
