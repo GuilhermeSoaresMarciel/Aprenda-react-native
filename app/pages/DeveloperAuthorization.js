@@ -13,7 +13,7 @@ import stylesDefault from "./../utils/stylesDefault.js";
 
 const theme = stylesDefault();
 
-const DEVELOPER_USER = "GUI.DEV";
+const DEVELOPER_USER = "KEY";
 
 export default function DeveloperAuthorization({ navigation }) {
   const [user, setUser] = useState("");
