@@ -246,8 +246,11 @@ export default function App({ navigation }) {
 
         <View style={styles.footer}>
           <Image style={styles.footerLogo} source={icon} />
-          <Text style={styles.footerText}>
-            Developed by: Guilherme Soares Marciel
+          <Text style={[styles.footerText, { fontStyle: "italic" }]}>
+            Developed by:{" "}
+            <Text style={{ color: theme.accent, fontWeight: "bold" }}>
+              Guilherme Soares Marciel
+            </Text>
           </Text>
         </View>
       </ScrollView>
