@@ -7,6 +7,8 @@ import {
   Platform,
 } from "react-native";
 
+import TaskTalk from "../components/TaskTalk";
+
 import stylesDefault from "./../utils/stylesDefault.js";
 
 const theme = stylesDefault();
@@ -261,6 +263,7 @@ export default function ComponentsAndProps({ navigation }) {
             <Text style={styles.text}>{item.text}</Text>
           </View>
         ))}
+        <TaskTalk content="Componente É o molde: uma função que retorna a interface e pode ser reutilizada. Use quando algo se repete ou ficou grande demais. Props São os dados que personalizam cada uso do molde. Use sempre que o conteúdo muda de um uso para outro. Juntos Componentes pequenos, configurados por props, formam telas inteiras sem repetição de código." />
       </View>
 
       <Pressable

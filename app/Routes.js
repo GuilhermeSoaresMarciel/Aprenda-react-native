@@ -10,6 +10,8 @@ import ListsAndForms from "./pages/ListsAndForms";
 import StatesEventsAndInteractivity from "./pages/StatesEventsAndInteractivity";
 import DeveloperAuthorization from "./pages/DeveloperAuthorization";
 
+import { stopTalk } from "./utils/Talk.js";
+
 const theme = stylesDefault();
 const Stack = createNativeStackNavigator();
 
@@ -63,6 +65,11 @@ export default function Routes() {
     <NavigationContainer theme={navigationTheme}>
       <Stack.Navigator
         initialRouteName="Home"
+        screenListeners={{
+          state: () => {
+            stopTalk();
+          },
+        }}
         screenOptions={{
           headerStyle: { backgroundColor: theme.bgMain },
           headerTintColor: theme.textColor,

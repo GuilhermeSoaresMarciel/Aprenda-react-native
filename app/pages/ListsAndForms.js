@@ -7,6 +7,8 @@ import {
   Platform,
 } from "react-native";
 
+import TaskTalk from "../components/TaskTalk";
+
 import stylesDefault from "./../utils/stylesDefault.js";
 
 const theme = stylesDefault();
@@ -334,6 +336,7 @@ export default function ListsAndForms({ navigation }) {
             <Text style={styles.text}>{item.text}</Text>
           </View>
         ))}
+        <TaskTalk content="Listas Dados em um array, desenhados por um modelo de item. Use map para listas curtas e FlatList para listas longas, sempre com chaves únicas. Formulários TextInput guarda o que o usuário digita no estado, com valor e mudança de textos. Valide antes de enviar. Juntos Um formulário adiciona dados ao estado, e a lista mostra o resultado, atualizando sozinha a cada mudanças" />
       </View>
 
       <Pressable

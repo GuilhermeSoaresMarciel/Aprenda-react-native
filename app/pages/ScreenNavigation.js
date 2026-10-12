@@ -7,6 +7,8 @@ import {
   Platform,
 } from "react-native";
 
+import TaskTalk from "../components/TaskTalk";
+
 import stylesDefault from "./../utils/stylesDefault.js";
 
 const theme = stylesDefault();
@@ -280,6 +282,7 @@ export default function ScreenNavigation({ navigation }) {
             <Text style={styles.text}>{item.text}</Text>
           </View>
         ))}
+        <TaskTalk content="O container de navegação envolve todo o aplicativo e armazena o estado da navegação, devendo existir apenas um dentro da rota. Já as bibliotecas de navegação de telas organizam as telas em pilha. Cada tela tem um nome e um componente. Temos ainda recursos para abrir outras telas, voltar para a tela anterior e levar dados de uma tela para outra." />
       </View>
 
       <Pressable

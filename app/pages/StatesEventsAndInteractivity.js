@@ -7,6 +7,8 @@ import {
   Platform,
 } from "react-native";
 
+import TaskTalk from "../components/TaskTalk";
+
 import stylesDefault from "./../utils/stylesDefault.js";
 
 const theme = stylesDefault();
@@ -333,6 +335,7 @@ export default function StatesEventsAndInteractivity({ navigation }) {
             <Text style={styles.text}>{item.text}</Text>
           </View>
         ))}
+        <TaskTalk content="Estado É a memória do componente, criada com useState. Cada mudança, feita pela função set, redesenha a tela. Eventos São as ações do usuário, como onPress e onChangeText. Cada um chama uma função que normalmente altera o estado. Interatividade Nasce da combinação dos dois: o usuário age, o estado muda e a tela responde mostrando, escondendo ou atualizando conteúdo." />
       </View>
 
       <Pressable
